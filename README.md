@@ -7,3 +7,4 @@ Se usaron los formatos de nav bar y tarjetas de bootstrap
 La pagina consiste en un emprendimiento de Reposteria artistica, donde se ofrecen diferentes tipos de tortas con diseños y tamaños.
 https://github.com/yanivaldez/portafolio-2
 https://yanivaldez.github.io/portafolio-2/
+

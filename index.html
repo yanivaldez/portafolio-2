@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>portafolio modulo2</title>
@@ -11,7 +12,7 @@
 <body>
   <main>
   <!-- barra de navegacion -->
-    <nav class="navbar navbar-expand-lg bg-primary px-5">
+    <nav class="navbar navbar-expand-lg bg-light px-5">
         <div class="container-fluid">
           <a class="navbar-brand" href="./assets/img/logo.transparente.png">
             <img src="./assets/img/logo.transparente.png" alt="foto9" width="60px">
@@ -25,80 +26,75 @@
               <li class="nav-item">
                 <a class="nav-link text-dark" style="font-weight: bold; font-size: x-large;">Blanco y Valdez Reposteria Gourmet</a>
               </li>
-              <li class="nav-item ps-5">
-                <a class="nav-link active" aria-current="page" href="./productos.html">Tortas de un piso</a>
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./productos.html">Tortas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./otros_productos.html">Tortas de varios pisos</a>
-              </li>
-             
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="Carro compras" placeholder="Carro de Compras" aria-label="Carro de compras">
-              <a href="./carro_de_compras.html"></a>
-              <button class="btn btn-outline-warning" type="submit">ver</button>
+              <img src="./assets/img/carro.jpg.svg" alt="foto" width="30px">
+              <a class="nav-link btn btn-outline-warning" href="./carrito.html" type="submit">Carrito de Compras</a>
               <i class="fa-solid fa-cart-shopping"></i>
-              
-            </form>
+          </li>
           </div>
         </div>
       </nav>
       <!-- fin barra navegacion -->
+      <main>
+      <div class="row">
+       
+        <section class="container col-lg-7 col-sm-12 col-md-6"> 
+          <img src="./assets/img/Diapositiva1.JPG" alt="foto1">
+          <p>Para cotizaciones escribenos al Whatsapp</p>
+        </section>
+        <section class="container col-lg-4 col-sm-12 col-md-1"> 
+          <h1 class="Display-2 text-info"> Déjate Tentar con nuestros Productos</h1>
+          <p>En BlancoyValdez creemos que todo momento especial merece celebrarse de una manera única, por eso diseñamos tortas a medida para acompañar cada ocasión</p>
+          <h2 style="color:blueviolet">Carta de Sabores</h2>
+          <h3 style="color: grey">Sabores de las Tortas:</h3>
+          <ul>
+            <li>Vainilla</li>
+            <li>Chocolate</li>
+            <li>Marmoleada</li>
+            <li>Red Velvet</li>
+            <li>Coco</li>
+            <li>Zanahorias</li>
+            <li>Limón</li>
+          </ul>
+          <h3 style="color: grey">Rellenos</h3>
+          <ul>
+            <li>Ganache de Choclate</li>
+            <li>Crema Pastelera (Vainilla o Chocolate)</li>
+            <li>Manjar o Arequipe</li>
+            <li>Lucuma</li>
+          <li>Maracuya</li>
+          <li>Frutillas</li>
+          <li>Frambuesas</li>
+          <li>Mousse de Cafe o Chocolate</li>
+          <li>Crema Oreo</li>
+          <li>Prestigio (Coco)</li>
+          <li>Limon</li>
+          <li>Duraznos</li>
+          <li>Naranjas</li>
+          </ul>
 
-   <!-- Carousel -->
+      </div>
+      </main>
+
    
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-    </div>
-    
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner mx-5">
-      <div class="carousel-item active pt-5 ms-5">
-        <img src="./assets/img/logo.transparente.png" alt="Foto8" class="d-block" style="width:30%">
-      </div>
-      <div class="carousel-item ms-5 mt-5">
-        <img src="./assets/img/Screenshot_20180801-104833.png" alt="Foto9" class="d-block" style="width:20%">
-      </div>
-      <div class="carousel-item ms-5 mt-5">
-        <img src="./assets/img/20180806_222853 - copia.png" alt="Foto7" class="d-block" style="width:20%">
-      </div>
-    </div>
-    
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-  <div class="container-fluid mt-5">
-
-  </div>
-
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<script src="./portafolio-2/assets/js/script.js"></script>
+<script src="./productos.html"></script>
+<script src="./assets/js/productos.js"></script>
+<script src="./assets/js/carrito.js"></script>
+<script src="./assets/js/index.js"></script>
 </body>
 
 <footer class="container bg-light mt-5 text-center">
   <hr>
-     <p>Blanco y Valdez Reposteria Artistica, ubicada en la Comuna de Maipu Region Metroplitana Santiago de Chile</p>
+     <p>Blanco y Valdez Repostería Artística, ubicada en la Comuna de Maipu Region Metroplitana Santiago de Chile</p>
     <p>Sigue nuetras redes sociales @blancoyvaldez Telefono +56 953190719</p>
     <p> Elaborado por Yanitza Valdez</p>
+    <p>Since 2017</p>
 </footer>
 </html>
 </main>
