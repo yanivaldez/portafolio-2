@@ -1,7 +1,7 @@
 let cupones = [
   {
     nombre: "10%",
-    descuento: 10,
+    descuento: 1000,
     estado: true,
   },
 ];
@@ -11,8 +11,8 @@ let productosCarro = [];
 let precioTotalCompra = 0;
 
 if (localStorage.getItem("productos")) {
-  productosCarro = JSON.parse(localStorage.getItem("productos"));
-  console.log(productosCarro);
+  productosCarro = JSON.parse(localStorage.getItem("productos"))
+ 
   actualizarCarro(productosCarro);
 }
 
@@ -98,7 +98,7 @@ document
       alert("cupón encontrado.");
       precioTotalCompra =
         precioTotalCompra -
-        (precioTotalCompra * cuponEncontrado.descuento) / 100;
+        (precioTotalCompra * cuponEncontrado.descuento) / 1000;
       document.querySelector(
         "#precio-total"
       ).innerHTML = `El precio total de la compra con descuento es: <strong>$${precioTotalCompra}</strong>`;
@@ -129,20 +129,19 @@ document
     cargarTablaProductos();
   }
 
+ //RESTAR PRODUCTOS
 
-  //RESTAR PRODUCTOS
+ function sumar(sku){
 
-  function sumar(sku){
-
-    productosCarro.forEach((producto, index) => {
-      if(sku == producto.sku){
-        producto.cantidad = producto.cantidad + 1;
-        if(producto.cantidad >= 10){
-          producto.cantidad =10;
-          alert("Alcanzo el limite de productos permitidos (10 unidades)")
-        }
+  productosCarro.forEach((producto, index) => {
+    if(sku == producto.sku){
+      producto.cantidad = producto.cantidad + 1;
+      if(producto.cantidad >= 5){
+        producto.cantidad =5;
+        alert("Alcanzo el limite de productos permitidos (5 unidades)")
       }
-    })
-    actualizarCarro(productosCarro);
-    cargarTablaProductos();
-  }
+    }
+  })
+  actualizarCarro(productosCarro);
+  cargarTablaProductos();
+}
